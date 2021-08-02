@@ -9,16 +9,19 @@ export const AddTodo = (props) => {
       if(!title || !desc){
           alert("title or discription cannot be blank");
       }
+      else{
       props.addTodo(title,desc);
+      setTitle("");
+      setDesc("");
      }
-
+    }
 
     return (
-        <div className= "container" my-3>
+        <div className= "container">
         <h3 className=" text-center bg-dark text-light" >Add a to-do-work</h3>
         <form onSubmit = {submit}>
   <div className="mb-3">
-    <label htmlhtmlFor="exampleInputEmail1" className="Form-label">to-do Work title</label> 
+    <label htmlFor="exampleInputEmail1" className="Form-label">to-do Work title</label> 
             <br/>
     <input type="text" value= {title} onChange={(e)=>{setTitle(e.target.value)}} className="Form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
   </div>
@@ -34,4 +37,5 @@ export const AddTodo = (props) => {
 </div>
 
     )
-}
+
+    }
