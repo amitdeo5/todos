@@ -31,7 +31,7 @@ export default function Header(props) {
 }
 
 Header.defaultProps = {
-    title: "your title here",
+    title: "My Todos List",
     searchBar: true
 }
 
