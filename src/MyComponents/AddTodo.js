@@ -15,14 +15,16 @@ export const AddTodo = (props) => {
 
     return (
         <div className= "container" my-3>
-        <h3>Add a to-do-work</h3>
+        <h3 className=" text-center bg-dark text-light" >Add a to-do-work</h3>
         <form onSubmit = {submit}>
   <div className="mb-3">
-    <label htmlhtmlFor="exampleInputEmail1" className="Form-label">to-do Work title</label>
+    <label htmlhtmlFor="exampleInputEmail1" className="Form-label">to-do Work title</label> 
+            <br/>
     <input type="text" value= {title} onChange={(e)=>{setTitle(e.target.value)}} className="Form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
   </div>
   <div className="mb-3">
     <label htmlFor="exampleInputPassword1" className="Form-label">to-do-work description</label>
+    <br/>
     <input type="text" value= {desc} onChange={(e)=>{setDesc(e.target.value)}}  className="Form-control" id="desc"/>
   </div>
   

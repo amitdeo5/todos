@@ -19,6 +19,10 @@ function App() {
 
   const addTodo = (title, desc)=>{
     console.log("i'm adding this todo", title, desc)
+
+    if(todos.length==0){
+      sno=0;
+    }
     let sno = todos[todos.length-1].sno + 1;
 
     const myTodo = {

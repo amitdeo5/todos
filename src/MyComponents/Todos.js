@@ -7,8 +7,8 @@ export const Todos = (props) => {
     
     }
     return (
-        <div className= "container my-1 " style={myStyle}>
-        <h3 className="text-center my-2 bg-dark text-light">Todos List</h3>
+        <div className= "container my-2 " style={myStyle}>
+        <h3 className="text-center my-3 bg-dark text-light">To-do-Work List</h3>
         {props.todos.length===0? "huraay !! You have completed your all pending works !!" :
         props.todos.map((todo)=>{
            return <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete}/>
